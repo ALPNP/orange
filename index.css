@@ -1,0 +1,89 @@
+html {
+    font: 16px/1.4 Georgia, serif;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: url('./images/06.jpg') repeat-x bottom center;
+    padding-bottom: 6rem;
+    background-size: 50vw;
+    min-height: 100vh;
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+h1 {
+    font: 2.5rem/1 'Pacifico', cursive;
+    margin: 0 0 1rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+.page {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+}
+
+.section-col {
+    position: relative;
+    width: 50%;
+}
+
+.section-col-60 {
+    width: 60%;
+}
+
+.section-col-40 {
+    width: 40%;
+}
+
+.section-col img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    .section {
+        display: block;
+    }
+
+    .section-col, .section-col-40 {
+        width: 100%;
+    }
+}
+
+.image-abs {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.bubbles {
+    position: absolute;
+    width: 100%;
+    background: url('./images/07.png') repeat-x bottom center;
+    bottom: 0;
+    left: 0;
+    background-size: 50vw;
+    height: 12rem;
+}
